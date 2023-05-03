@@ -3,10 +3,35 @@
 
 {% block content %}
 
-    <h1>Home</h1>
+<div class="container text-center">
+    <h1 class="mt-5">Welcome to Our Spa</h1>
+    <p class="lead">Relax, rejuvenate, and refresh at our luxurious spa.</p>
+    
+    <img src="{{ url_for('static', filename='images/spa_image1.jpg') }}" class="img-fluid rounded my-4" alt="Spa Image">
 
-    <p class="lead">This is the home page.</p>
+    <h2>Our Services</h2>
+    <div class="row mt-4">
+        <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='images/spa_service1.jpg') }}" class="img-fluid rounded mb-4" alt="Service Image">
+            <h4>Massage Therapy</h4>
+            <p>Experience relaxation and healing with our professional massage therapies.</p>
+        </div>
+        <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='images/spa_service2.jpg') }}" class="img-fluid rounded mb-4" alt="Service Image">
+            <h4>Facial Treatments</h4>
+            <p>Revitalize your skin with our top-quality facial treatments.</p>
+        </div>
+        <div class="col-lg-4">
+            <img src="{{ url_for('static', filename='images/spa_service3.jpg') }}" class="img-fluid rounded mb-4" alt="Service Image">
+            <h4>Body Scrubs</h4>
+            <p>Indulge in the ultimate skin rejuvenation with our refreshing body scrubs.</p>
+        </div>
+    </div>
 
-    <p>Here is some more info!</p>
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you. Feel free to reach out to book an appointment or ask any questions.</p>
+    <p><i class="bi bi-telephone-fill"></i> +1 123-456-7890</p>
+    <p><i class="bi bi-envelope-fill"></i> contact@ourspa.com</p>
+</div>
 
 {% endblock %}
