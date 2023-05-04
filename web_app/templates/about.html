@@ -5,8 +5,56 @@
 
     <h1>About</h1>
 
-    <p class="lead">This is the about page</p>
+ 
+<style>
 
-    <p>Here is some more info!</p>
+    label {
+        display: block;
+        font: 1rem 'Fira Sans', sans-serif;
+    }
+    
+    input,
+    label {
+        margin: 0.4rem 0;
+    }
+    
+    </style>
+    
+    <label for="start">Select a date for your appointment:</label>
+    
+    <input type="date" id="start" name="trip-start"
+           value="date"
+           min="2023-01-01" max="2024-12-31">
+    
+           <style> {
+            display: block;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+        
+        input,
+        label {
+            margin: 0.4rem 0;
+        }
+        
+        </style>
+        
+        <label for="appt">Choose a time for your appointment:</label>
+        
+        <input type="time" id="appt" name="appt"
+               min="09:00" max="18:00" required>
+        
+        <small>Office hours are 9am to 6pm</small>
+    
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+    
+        <p><button>Submit</button></p>
+    
+    
 
 {% endblock %}
